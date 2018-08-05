@@ -1,12 +1,14 @@
 package com.jeremyyang.model;
 
-public class License{
+public class License {
 
     private String licenseId;
 
     private String organizationId;
 
     private String comment;
+
+    private Organization organization;
 
     public String getLicenseId() {
         return licenseId;
@@ -31,4 +33,13 @@ public class License{
     public void setComment(String comment) {
         this.comment = comment;
     }
+
+    public Organization getOrganization() {
+        return organization;
+    }
+
+    public void setOrganization(Organization organization) {
+        this.organization = organization;
+    }
+
 }
